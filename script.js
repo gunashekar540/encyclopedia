@@ -1,5 +1,15 @@
 const youtubeApiKey = 'AIzaSyD3KfuoYiOm_e75xRjMc23_oWUp8tGYJmI';
 const unsplashApiKey = 'mxkFROhG3oSGbjHwys19F09h38MKYHJBx8n6SDoo7ek';
+// Function to toggle between light and dark mode
+function toggleTheme() {
+    const body = document.body;
+    body.classList.toggle('light-mode');
+    body.classList.toggle('dark-mode');
+}
+
+// Event listener for the theme toggle button
+const themeToggle = document.getElementById('theme-toggle');
+themeToggle.addEventListener('click', toggleTheme);
 function search() {
     const searchQuery = document.getElementById('searchQuery').value;
     const wikipediaResults = document.getElementById('wikipediaResults');
